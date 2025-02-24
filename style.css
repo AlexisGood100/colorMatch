@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #2C3E50; /* Dark charcoal background for a witchy atmosphere */
+}
+
+#game-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #1A1A1A; /* Dark background for container */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Mystical shadow effect */
+}
+
+#top-color {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin:0 auto;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.color-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 10px;
+  border: 2px solid #1A1A1A;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+#score, #timer {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #F39C12; /* Gold color for text */
+}
+
+@media (max-width: 600px) {
+  #top-color {
+    width: 80px;
+    height: 80px;
+  }
+
+  .color-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .color-options {
+    /* flex-direction: column;
+    justify-content: center; */
+  }
+}
+
