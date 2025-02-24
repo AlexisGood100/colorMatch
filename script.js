@@ -79,7 +79,7 @@ colorBoxes.forEach((box) => {
       alert('Wrong color! Game Over!');
       clearInterval(timerId);
       setTimeout(()=>{
-        window.location.href = '/'; // This will take the user to the homepage
+        window.location.href = 'https://alexisgood100.github.io/colorMatch/'; // This will take the user to the homepage
     },1000);
     }
   });
